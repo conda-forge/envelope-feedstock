@@ -22,9 +22,9 @@ requirements:
     - python >=3.6
   run:
     - jsonpickle
-    - py3-validate-email >=1.0.0
+    - py3-validate-email
     - python >=3.6
-    - python-gnupg
+    - python-gnupg >=0.5
     - python-magic
 
 test:
