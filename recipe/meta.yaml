@@ -26,6 +26,9 @@ requirements:
     - python-gnupg >=0.5
     - python-magic
 
+    # This is required though not specified upstream
+    - py3-validate-email
+
 test:
   imports:
     - envelope
