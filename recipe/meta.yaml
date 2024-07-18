@@ -19,11 +19,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.10
   run:
+    - python >=3.10
     - jsonpickle
-    - py3-validate-email
-    - python >=3.6
     - python-gnupg >=0.5
     - python-magic
 
