@@ -1,5 +1,5 @@
 {% set name = "envelope" %}
-{% set version = "2.0.4" %}
+{% set version = "2.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/envelope-{{ version }}.tar.gz
-  sha256: 7b1674cc5d0ea10f5839619a2b75239a28a7e1301815036c719dcd48902798ae
+  sha256: edf76018285412b5ced2d81c2b60725e4f83262998827cce8adf32ed4c1cdb91
 
 build:
   entry_points:
