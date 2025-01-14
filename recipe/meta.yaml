@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "envelope" %}
 {% set version = "2.0.5" %}
 
@@ -6,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/envelope-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/envelope-{{ version }}.tar.gz
   sha256: edf76018285412b5ced2d81c2b60725e4f83262998827cce8adf32ed4c1cdb91
 
 build:
@@ -14,14 +15,14 @@ build:
     - envelope=envelope.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - jsonpickle
     - python-gnupg >=0.5
     - python-magic
@@ -37,6 +38,7 @@ test:
     - envelope --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/CZ-NIC/envelope
