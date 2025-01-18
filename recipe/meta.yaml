@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "envelope" %}
-{% set version = "2.0.5" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/envelope-{{ version }}.tar.gz
-  sha256: edf76018285412b5ced2d81c2b60725e4f83262998827cce8adf32ed4c1cdb91
+  sha256: 39048ba82079c04cd69a9850a2427f5830c55c4177cd6d5f0138a51d4f233e7b
 
 build:
   entry_points:
     - envelope=envelope.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
