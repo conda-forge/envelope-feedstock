@@ -45,7 +45,7 @@ about:
   home: https://github.com/CZ-NIC/envelope
   summary: Insert a message and attachments and send e-mail / sign / encrypt contents by a single line.
   license: GPL-3.0-only
-  license_file: LICENSE.txt
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
