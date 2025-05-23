@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "envelope" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/envelope-{{ version }}.tar.gz
-  sha256: 33f0610a851dc8236dd583f318a405ef63f6fa7e34f59ed1b7be85bb7416249b
+  sha256: 4c7fa5cc07a0ca7e06de965a86158220716a2869316a54130a4064688be4a5d4
 
 build:
   entry_points:
