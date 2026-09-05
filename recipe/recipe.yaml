@@ -1,9 +1,8 @@
 schema_version: 1
 
 context:
-  python_min: '3.10'
   name: envelope
-  version: "2.3.1"
+  version: "2.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/envelope-${{ version }}.tar.gz
-  sha256: c1118ad331387c1f2fb7c113ed6b66c265ae702fd9a8ba361ccc995ebd6acb5c
+  sha256: 55ad855f3ab31f659c4a978692ddd202fee3b3775bb8e07f0a5d50b0d484e4c1
 
 build:
   number: 0
@@ -39,7 +38,9 @@ tests:
       imports:
         - envelope
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
