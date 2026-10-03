@@ -24,13 +24,11 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - poetry-core
+    - poetry-core >=1.0.0
   run:
     - python >=${{ python_min }}
-    - jsonpickle
     - python-gnupg >=0.5
     - python-magic
-    # This is required though not specified upstream
     - py3-validate-email
 
 tests:
