@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: envelope
-  version: "2.4.2"
+  version: "2.4.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/envelope-${{ version }}.tar.gz
-  sha256: aa7333046195d4dcc9dd2cd5d90427f7367281b4e2bfd087fb4e06bc615e5d95
+  sha256: 5e26dfa9f90794fb066ee8a24b49ceb6c24fb7f69bf537b88f5ea75f317335ea
 
 build:
   number: 0
