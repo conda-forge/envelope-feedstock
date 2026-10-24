@@ -29,7 +29,7 @@ requirements:
     - python >=${{ python_min }}
     - python-gnupg >=0.5
     - python-magic
-    - py3-validate-email
+    - email-validator
 
 tests:
   - python:
