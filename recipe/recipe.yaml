@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: envelope
-  version: "2.4.3"
+  version: "2.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/envelope-${{ version }}.tar.gz
-  sha256: 5e26dfa9f90794fb066ee8a24b49ceb6c24fb7f69bf537b88f5ea75f317335ea
+  sha256: 02a29799f39320d7edf249384a255890fa9dff00d64ac6651ab52617cf185202
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - python >=${{ python_min }}
     - python-gnupg >=0.5
     - python-magic
-    - py3-validate-email
+    - email-validator
 
 tests:
   - python:
